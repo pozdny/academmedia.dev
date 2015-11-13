@@ -1,0 +1,38 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <div class="icon icon-back"></div></a></div>
+        <div class="center sliding">Добавить</div>
+        <div class="right">
+            <a href="#" class="link icon-only" ontouchend="do_save();"> <div class="icon icon-save"></div></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="add" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block">
+                <div class="content-block-inner">
+                    <form >
+                        <div class="form-group">
+                            <input id="note-title" type="text" class="form-control" placeholder="Заголовок">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="note-content" placeholder="Текст заметки" class="form-control" rows="7"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="note-check">
+                                Пометить заметку
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

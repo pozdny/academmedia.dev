@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size:14px;
+}
+.views{
+  .navbar{
+    background:#ccc;
+    div.icon{
+      width:30px;
+      height:30px;
+      background:url('../img/icons.png') no-repeat;
+      &.icon-back{
+        background-position: 0 0;
+      }
+      &.icon-plus{
+        background-position: -30px 0;
+      }
+      &.icon-save{
+        background-position: -60px 0;
+      }
+      &.icon-edit{
+        background-position: -90px 0;
+      }
+    }
+  }
+  .pages{
+    form{
+      .form-group{
+        width:100%;
+        margin-bottom:20px;
+        .form-control{
+          width:100%;
+          margin:0;
+          padding:5px;
+          display:block;
+        }
+      }
+      .checkbox{
+        text-align: center;
+        margin-bottom:15px;
+      }
+    }
+    .page-content{
+      background:#fff;
+      .content-block{
+        padding:0px;
+
+        .content-block-inner{
+          width:100%;
+          margin:0 auto 10px;
+          padding:15px;
+
+
+        }
+        .list-block{
+          margin:0;
+          #list{
+            .checked{
+              background: #dbfefc;
+            }
+            .content-block-title{
+              text-align: center;
+            }
+            p{
+              text-align: center;
+            }
+            .item-content{
+              padding-left:0;
+              .item-inner{
+                padding-left:15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .button{
+      display: block;
+      width: 90%;
+      border: 1px solid #cf060e;
+      margin: 0 auto;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      font-size: 30px;
+      border-radius: 5px;
+      background-color: #cf060e;
+      color: #fff;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
+      inset 0 2px 2px -2px #fff;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      position: relative;
+      &:active{
+        text-shadow: 0px 0px 5px #fff;
+        background-color: #e8060e;
+        top: 3px;
+        box-shadow: none;
+      }
+    }
+  }
+
+}
