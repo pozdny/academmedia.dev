@@ -61,14 +61,20 @@ body {
   margin: 0 auto 10px;
   padding: 15px;
 }
+.views .pages .page-content .content-block .content-block-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: none;
+}
+.views .pages .page-content .content-block .content-block-title,
+.views .pages .page-content .content-block .content-block-date {
+  text-align: center;
+}
 .views .pages .page-content .content-block .list-block {
   margin: 0;
 }
 .views .pages .page-content .content-block .list-block #list .checked {
-  background: #dbfefc;
-}
-.views .pages .page-content .content-block .list-block #list .content-block-title {
-  text-align: center;
+  background-color: #dbfefc;
 }
 .views .pages .page-content .content-block .list-block #list p {
   text-align: center;
@@ -78,6 +84,14 @@ body {
 }
 .views .pages .page-content .content-block .list-block #list .item-content .item-inner {
   padding-left: 15px;
+}
+.views .pages .page-content .content-block .list-block #list .item-content .item-inner .item-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.views .pages .page-content .content-block .list-block #list .item-content .item-inner .item-title .item-date {
+  font-weight: normal;
+  font-size: 0.9em;
 }
 .views .pages .button {
   display: block;
@@ -91,7 +105,7 @@ body {
   border-radius: 5px;
   background-color: #cf060e;
   color: #fff;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), inset 0 2px 2px -2px #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), inset 0 2px 2px -2px #ffffff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   position: relative;
 }
